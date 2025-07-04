@@ -9,10 +9,14 @@ regularly the specific endpoint to download the instructions
 signed JSON. 
 
 The instructions JSON look the following way:
-```json
+```json5
 {
-  "install-plugins": [
-    
-  ],
+  "install_plugins": [
+    {
+      "download_url" : "https://jonnyzzz.com/broken-example.zip",
+      "include_parameters" : true // marks is IDE information should be included to the download URL, default true
+    }
+  ]
 }
 ```
+
